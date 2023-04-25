@@ -24,7 +24,7 @@ class Wallet {
             if (t != null) {
                 if (t instanceof Exchangable) {
                     Cryptocurrency c = (Cryptocurrency) t;
-                    System.out.println(c + " equals " + c.getExchangeRate() * 7.5 + " EUR, token type: " + t.getTokenType());
+                    System.out.println(c + " equals " + c.getExchangeRate() * c.getAmount() + " EUR, token type: " + t.getTokenType());
                 } else {
                     NFT n = (NFT) t;
                     System.out.println(n + ", token type: " + n.getTokenType());
